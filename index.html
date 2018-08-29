@@ -725,7 +725,7 @@
       </amp-selector>
     </div>
     <div class="items-center flex">
-      <label for="size">Día de la Semana:</label>
+      <label for="size">Día de la Oferta:</label>
       <amp-selector name="size"
         layout="container"
         on="select:AMP.setState({ product: {selectedSize: event.targetOption}})"
@@ -756,12 +756,6 @@
                       ? ''
                       : 'unavailable'">J</li>
 
-
-          <li option="V"
-            class="unavailable"
-            [class]="(product[product.selectedColor].sizes['V'] != 'unavailable')
-                      ? ''
-                      : 'unavailable'">V</li>
         </ul>
 
 
@@ -787,7 +781,7 @@
       data-amp-replace="CLIENT_ID">
     <div submit-error>
       <template type="amp-mustache">
-        Error! Ocurrió un error con su carro de circuitos. Tal vez se solucione reintentándolo {{error}}
+        Error! Ocurrió un error con su reserva de ofertas. Tal vez se solucione reintentándolo {{error}}
       </template>
     </div>
   </form>
