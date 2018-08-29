@@ -645,8 +645,6 @@
             "X": "$ 6.500",
             "J": "$ 6.500",
             "V": "unavailable",
-            "S": "unavailable",
-            "D": "unavailable"
           },
           "defaultSize": "M"
         },
@@ -657,8 +655,6 @@
             "X": "$ 7.200",
             "J": "$ 7.200",
             "V": "unavailable",
-            "S": "unavailable",
-            "D": "unavailable"
           },
           "defaultSize": "M"
         },
@@ -669,8 +665,6 @@
             "X": "$ 8.500",
             "J": "$ 8.500",
             "V": "unavailable",
-            "S": "unavailable",
-            "D": "unavailable"
           },
           "defaultSize": "M"
         }
@@ -732,11 +726,6 @@
           <li option="3">3</li>
           <li option="4">4</li>
           <li option="5">5</li>
-          <li option="6">6</li>
-          <li option="7">7</li>
-          <li option="8">8</li>
-          <li option="9">9</li>
-          <li option="10">10</li>
         </ul>
       </amp-selector>
     </div>
@@ -749,8 +738,8 @@
                       ? product.selectedSize
                       : product[product.selectedColor].defaultSize">
         <ul class="p0 m1">
-          <li option="unavailable"
-            class=""
+          <li option="L"
+            class="unavailable"
             [class]="(product[product.selectedColor].sizes['L'] != 'unavailable')
                       ? ''
                       : 'unavailable'">L</li>
